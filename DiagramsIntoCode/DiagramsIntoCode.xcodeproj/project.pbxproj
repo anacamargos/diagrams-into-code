@@ -12,6 +12,7 @@
 		BF23C01E2485262600F1432D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C01D2485262600F1432D /* FeedViewController.swift */; };
 		BF23C0212485269E00F1432D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C0202485269E00F1432D /* FeedLoader.swift */; };
 		BF23C0242485271300F1432D /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C0232485271300F1432D /* RemoteFeedLoader.swift */; };
+		BF23C0272485276D00F1432D /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C0262485276D00F1432D /* LocalFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF23C01D2485262600F1432D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BF23C0202485269E00F1432D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		BF23C0232485271300F1432D /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		BF23C0262485276D00F1432D /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		BF23C0072485256300F1432D /* DiagramsIntoCode */ = {
 			isa = PBXGroup;
 			children = (
+				BF23C0252485275700F1432D /* Database */,
 				BF23C022248526FD00F1432D /* API */,
 				BF23C01F2485268200F1432D /* Feed Feature */,
 				BF23C01C2485260200F1432D /* UI */,
@@ -86,6 +89,14 @@
 				BF23C0232485271300F1432D /* RemoteFeedLoader.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		BF23C0252485275700F1432D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BF23C0262485276D00F1432D /* LocalFeedLoader.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				BF23C0212485269E00F1432D /* FeedLoader.swift in Sources */,
 				BF23C0242485271300F1432D /* RemoteFeedLoader.swift in Sources */,
+				BF23C0272485276D00F1432D /* LocalFeedLoader.swift in Sources */,
 				BF23C01E2485262600F1432D /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
