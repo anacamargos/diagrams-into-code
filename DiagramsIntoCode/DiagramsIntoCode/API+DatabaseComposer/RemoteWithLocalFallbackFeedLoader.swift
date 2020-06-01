@@ -14,8 +14,12 @@ struct Reachability {
 
 final class RemoteWithLocalFallbackFeedLoader: FeedLoader {
     
+    // MARK: - Dependencies
+    
     private let local: FeedLoader
     private let remote: FeedLoader
+    
+    // MARK: - Initializer
     
     init(
         local: FeedLoader = LocalFeedLoader(),
@@ -24,6 +28,8 @@ final class RemoteWithLocalFallbackFeedLoader: FeedLoader {
         self.local = local
         self.remote = remote
     }
+    
+    // MARK: - FeedLoader
     
     func loadFeed(completion: @escaping ([String]) -> Void) {
         let load = Reachability.networkAvailable ? remote.loadFeed : local.loadFeed
