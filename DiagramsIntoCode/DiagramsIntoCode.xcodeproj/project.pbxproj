@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF23C0122485256600F1432D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF23C0112485256600F1432D /* Assets.xcassets */; };
 		BF23C0152485256600F1432D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF23C0132485256600F1432D /* LaunchScreen.storyboard */; };
+		BF23C01E2485262600F1432D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C01D2485262600F1432D /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		BF23C0112485256600F1432D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF23C0142485256600F1432D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF23C0162485256600F1432D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF23C01D2485262600F1432D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +50,20 @@
 		BF23C0072485256300F1432D /* DiagramsIntoCode */ = {
 			isa = PBXGroup;
 			children = (
+				BF23C01C2485260200F1432D /* UI */,
 				BF23C0112485256600F1432D /* Assets.xcassets */,
 				BF23C0132485256600F1432D /* LaunchScreen.storyboard */,
 				BF23C0162485256600F1432D /* Info.plist */,
 			);
 			path = DiagramsIntoCode;
+			sourceTree = "<group>";
+		};
+		BF23C01C2485260200F1432D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BF23C01D2485262600F1432D /* FeedViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +98,7 @@
 				TargetAttributes = {
 					BF23C0042485256300F1432D = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -125,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF23C01E2485262600F1432D /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR4HDJL2Y8;
 				INFOPLIST_FILE = DiagramsIntoCode/Info.plist;
@@ -269,6 +283,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ana.DiagramsIntoCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -278,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR4HDJL2Y8;
 				INFOPLIST_FILE = DiagramsIntoCode/Info.plist;
