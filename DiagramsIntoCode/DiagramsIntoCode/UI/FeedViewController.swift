@@ -9,5 +9,29 @@
 import UIKit
 
 final class FeedViewController: UIViewController {
-
+    
+    // MARK: - Dependencies
+    
+    private let loader: FeedLoader
+    
+    // MARK: - Initializers
+    
+    init(loader: FeedLoader) {
+        self.loader = loader
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - ViewController lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loader.loadFeed { loadedItems in
+            // Do something
+        }
+    }
 }
