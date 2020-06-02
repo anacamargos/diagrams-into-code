@@ -23,3 +23,11 @@ There is a lot of ways we can do that.
 An easy and often used approach is to change the ViewController to depend on the concrete types, and instead of talking to an interface the view controller would now depend on the concrete implementation of the RemoteFeedLoader and LocalFeedLoader. However we would have to introduce some logic in the view controller to know which one we should call and when and the code would be more complex, but it would also be an easy change. 
 
 We fulfilled the requirement and move on, now we have two concrete dependencies in the view controller and the code is starting to get more immobile, because every time there is a new requirement we would go in the view controller and add more logic and very easily this view controller will be a thousand lines long. Thus, everybody is going to be afraid of changing it, and our diagram would not be the same anymore.
+
+So how we can go back on our diagram and make the `FeedViewController` depending on the interface but still having this new behavior? In order to do that we can use composition, we can encapsulate this logic into a type that will check if the network is available and fetch the remote, otherwise use the cache
+
+So we move the same logic that we would add in the view controller to a new type: `RemoteWithLocalFallbackLoader`. But how can we make the view controller talk to this new type? As the view controller talks to the FeedLoader interface, we just need to make this new type conforms to the FeedLoader as well, and the view controller remains agnostic of the source of the feed.
+
+As you can see in the diagram the `RemoteWithLocalFallbackLoader` implements the FeedLoader and it depends on the `RemoteFeedLoader` and `LocalFeedLoader`, which means that the `FeedViewController` has no idea of all this logic, which means we changed the behavior of the code without changing the view controller. The `FeedViewController` doesn’t know where the feed is coming from and it doesn’t care and how easy can we test everything now?
+
+In this project there is an example of how to implement the diagram in the image above, taking all that was discussed in consideration.
