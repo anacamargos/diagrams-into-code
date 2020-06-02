@@ -14,6 +14,7 @@
 		BF23C0242485271300F1432D /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C0232485271300F1432D /* RemoteFeedLoader.swift */; };
 		BF23C0272485276D00F1432D /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C0262485276D00F1432D /* LocalFeedLoader.swift */; };
 		BF23C02A24852A2700F1432D /* RemoteWithLocalFallbackFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C02924852A2700F1432D /* RemoteWithLocalFallbackFeedLoader.swift */; };
+		BF23C02C2486697100F1432D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23C02B2486697100F1432D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BF23C0232485271300F1432D /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		BF23C0262485276D00F1432D /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		BF23C02924852A2700F1432D /* RemoteWithLocalFallbackFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWithLocalFallbackFeedLoader.swift; sourceTree = "<group>"; };
+		BF23C02B2486697100F1432D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BF23C0112485256600F1432D /* Assets.xcassets */,
 				BF23C0132485256600F1432D /* LaunchScreen.storyboard */,
 				BF23C0162485256600F1432D /* Info.plist */,
+				BF23C02B2486697100F1432D /* AppDelegate.swift */,
 			);
 			path = DiagramsIntoCode;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF23C02C2486697100F1432D /* AppDelegate.swift in Sources */,
 				BF23C0212485269E00F1432D /* FeedLoader.swift in Sources */,
 				BF23C0242485271300F1432D /* RemoteFeedLoader.swift in Sources */,
 				BF23C0272485276D00F1432D /* LocalFeedLoader.swift in Sources */,
